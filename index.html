@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>TheatrePedia</title>
+	
+	<!--  STYLESHEET -->
+	
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"><!--styesheet for the navbar as it is a template-->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!--styesheet for the slider-->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/half-slider.css" rel="stylesheet" type="text/css">
+	<!--  JQUERY  -->
+	<!--  FONT  -->
+    
+    
+	
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--
+more ui & layout https://github.com/alphadsy
+contribute on github : https://github.com/alphadsy/alpha-ui
+-->
+<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+  <!-- top nav -->
+  <nav class="navbar navbar-top hidden-xs">
+    <div class="container">
+      <!-- left nav top -->
+      <ul class="nav navbar-nav pull-left">
+        <li><a href="#"><span class="glyphicon glyphicon-thumbs-up text-white"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-globe text-white"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-pushpin text-white"></span></a></li>
+        <li><a href="#"><span class="text-white">QUESTIONS? CALL: <b>+963000000000</b></span></a></li>
+      </ul>
+      <!-- right nav top -->
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="https://github.com/alphadsy" class="text-white">About Us</a></li>
+        <li><a href="https://github.com/alphadsy" class="text-white">Contact Us</a></li> 
+      </ul>
+    </div>
+    <div class="dividline light-grey"></div>
+  </nav>
+  <!-- down nav -->
+  <nav class="navbar navbar-down">
+    <div class="container">
+      <div class="flex-container">  
+        <div class="navbar-header flex-item">
+          <div class="navbar-brand" href="https://github.com/alphadsy">ALPHAD</div>
+        </div>
+        <ul class="nav navbar-nav flex-item hidden-xs">
+          <li><a href="https://github.com/alphadsy">Projects</a></li>
+          <li><a href="https://github.com/alphadsy">Pricing</a></li> 
+          <li><a href="https://github.com/shu3aybbadran">TheTeam</a></li> 
+        </ul>
+        <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+          <li><a href="#" class="">offer!</a></li> 
+        </ul>
+        <!-- dropdown only moblie -->
+          <div class="dropdown visible-xs pull-right">
+            <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-align-justify"></span> 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Pricing</a></li> 
+              <li><a href="#">TheTeam</a></li> 
+              <li role="separator" class="divider"></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </nav>
+  </nav> 
+<header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</header>  
+<script type="text/javascript">
+// toggle class scroll 
+$(window).scroll(function() {
+    if($(this).scrollTop() > 50)
+    {
+        $('.navbar-trans').addClass('afterscroll');
+    } else
+    {
+        $('.navbar-trans').removeClass('afterscroll');
+    }  
+
+});
+  
+// demo only 
+// open link in new tab without ugly target="_blank"
+$("a[href^='http']").attr("target", "_blank");
+
+</script>
+	<main>
+	
+	
+	</main>	
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* GENERAL SETTING FOR THE WHOLE WEBSITE */
+* {
+	/*border: solid 2px black; margin:0; padding:0;border:1px solid black; 
+    /*-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    /*-moz-box-sizing: border-box;    /* Firefox, Gecko */
+    /*box-sizing: border-box;         /* Opera/IE 8+ */}
+
+a {text-decoration:none!important}
+/*FONTS --- font-family: 'Roboto Slab', serif; --- font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif;*/
+body { margin: auto; font-family: 'Montserrat', sans-serif;}
+/*CLASS CREATED FOR ACH SPECIFIC FONT*/
+.roboto-slab {font-family: 'Roboto Slab', serif!important;}
+.karla {font-family: 'Karla', sans-serif!important;}
+.montserrat {font-family: 'Montserrat', sans-serif!important;}
+/*MAX HEIGHT*/
+.max-height-35vw {min-height:25vw;max-height:45vw}
+.max-height-27vw {min-height:17vw; max-height:27vw; overflow-x:scroll;}
+.max-height-500 {max-height:100vh; overflow-y:scroll; overflow-x:hidden}
+.max-height-750 {max-height:150vh; overflow-y:scroll; overflow-x:hidden}
+
+/*LEFT LINE FOR CONTAINR*/
+.left-line {border-left: 1px solid rgba(206, 94, 116, 1)}
+.white-left-line {border-left: 1px solid white}
+ 	
+/*FONT SIZE CREATED*/
+.font-size-250 {font-size:250%}
+.font-size-200 {font-size:200%}
+.font-size-190 {font-size:190%}
+.font-size-180 {font-size:180%}
+.font-size-170 {font-size:170%}
+.font-size-160 {font-size:160%}
+.font-size-150 {font-size:150%}
+.font-size-140 {font-size:140%}
+.font-size-130 {font-size:130%}
+.font-size-120 {font-size:120%}
+.font-size-110 {font-size:110%}
+.font-size-100 {font-size:100%}
+.font-size-90 {font-size:90%}
+.font-size-80 {font-size:80%}
+.font-size-70 {font-size:70%}
+.font-size-60 {font-size:60%}
+.font-size-50 {font-size:50%}
+/*CLASS TO MOVE THE DIV TO THE BOTTOM OF THE DIV PARENT*/
+.bottom-div {
+	position:absolute;
+	bottom:0;
+}
+/*CLASS TO MOVE THE DIV ON THE RIGHT*/
+.right-button-plus{
+	position:absolute;
+	right:0;
+}
+/*FOR THE TITLE ON EACH SECTION where there will be a link for a different page*/
+.titleSection {
+	color: RGBA(143, 27, 50, 1.00)!important;
+	border-bottom: solid 2px rgba(143, 27, 50, 1.00);
+	text-transform: uppercase;
+	text-align: center;
+}
+/*HOVER OF THE TITLE, COLOR SWITCHED*/
+.titleSection:hover{
+	color:white!important;
+	text-decoration: none;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+    -webkit-box-shadow: -1500px 0 0 #8F1B32 inset;
+}
+/*TITLE FOR THE SECTION WITH "BANNER" BACKGROUND*/
+.banner-title{
+	color:white!important;
+	font-size: 180%;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+}
+
+/*design for the title of each paragraph title such as general information or production history*/
+.paragraphTitle {
+	color: RGBA(143, 27, 50, 1.00)!important;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif!important;
+}
+/*DESIGN BUTTON PRIMARY, OUTLINE*/
+.btn-outline-primary {
+	color: black!important;
+	text-transform: uppercase!important;
+	text-align: center!important;
+	background-color: RGBA(143, 27, 50, 1.00)!important;
+}
+/*************************************
+      DESIGN HOMEPAGE
+*****************************************/
+/*DESIGN FOR NAVIGATION BAR FOR SELECTION COUNTRY IN HOMEPAGE*/
+.nav-selection-country{
+	background-color: rgba(40, 2, 22, 1.00);
+	color: white;
+	max-height: 100px;
+}
+.title-selection{
+	color:white!important;
+	text-transform: uppercase;
+}
+.title-selection:hover{
+	color:white;
+	background-color: RGBA(143, 27, 50, 1.00);
+}
+/*HEART FAVOURITE and STAR favourite, FROM grey to their proper color*/
+.heart-favourite, .star-favourite {color:rgba(126,126,126,1.00)}
+.heart-favourite:hover {color:red;}
+.star-favourite:hover{color:rgba(255,215,0,1.00)}
+/*DESIGN FOR THE LIST IN THE USER-PROFILE PAGE WHERE HE HAS TO CHOOSE THE SECTION TO DISPLAY*/
+.inline-list-user-profile {
+	background-color: rgba(40, 2, 22, 1.00);
+	margin:0;
+	padding:0;
+}
+.inline-list-user-profile ul li {width:100%; color:white!important;}
+/*************************************
+      full bannerto use on the div full-banner and add the class to the img so it will fit the div.
+*****************************************/
+.full-banner {
+	width:100vw; 
+	height: 12vw; 
+	overflow-x: hidden;
+	padding:0 !important;
+	margin:0 !important;
+}
+/*************************************
+            NAVBAR DESIGN
+*****************************************/
+header {}
+nav, #navbar-header-search {
+	background-color: rgba(40, 2, 22, 1.00);
+	color: white;
+	max-height: 100px;
+}
+.nav-link {
+	display:block;
+	color: White;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+.nav-link:hover{
+	color:RGBA(239, 149, 167, 1.00);
+}
+
+/******************************************************************************
+            BOTTOM PAGE PRODUCTION/PERFORMERS/THEATRE CARDS LINKS
+******************************************************************************/
+.title-card-production{
+	color:black;
+	font-weight: bold;
+}
+.location-card-production{
+	color:dimgray;
+}
+.star-card-prod{
+	color:gold;
+}
+.fav-card-prod{
+	color:darkred;
+}
+.fb-card-prod{
+	color: RGBA( 59, 89, 152, 1.00);
+}
+.tw-card-prod{
+	color: RGBA( 0, 172, 237, 1.00);
+}
+.ig-card-prod {
+    background-image: -webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* For Chrome and Safari */
+    background-image:    -moz-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* For pre-releases of IE 10*/
+    background-image:      -o-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* For old Opera (11.1 to 12.0) */
+    background-image:         radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.rainbow {
+  background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.yt-card-prod{
+	color: RGBA( 187, 0, 0, 1.00);
+}
+/*MISSING SOCIAL SMALL BUTTONS*/
+/*************************************
+            FOOTER
+*****************************************/
+footer {
+	background-color: rgba(40, 2, 22, 1.00);
+	color: white;
+}
+footer.left-line {border-left: solid 1px white}
+/*************************************
+            NEWS BOX/CACRD USED IN THE HOMEPAGE!!!!
+*****************************************/
+.event-link {
+	display:block; 
+	background-color:white;
+}
+.event-link:hover{
+	background-color:rgba(143, 27, 50, 1.00);
+	color:white;
+	box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+    -webkit-box-shadow: -500px 0 0 #8F1B32 inset;
+}
+.event-link>a:hover {
+	text-decoration: none;
+	color:black;
+}
+.text-location{
+	color:black;
+	font-size:80%;
+}
+.title-news{
+	color:black;
+	font-size:85%!important;
+}
+.title-news:hover{color:white}
+.title-location {
+	font-size:70%!important;
+}
+.date-news{
+	color:black;
+}
+.news-sub-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size:90%;
+}
+/*************************************
+      SLIDER
+*****************************************/
+/* CUSTOMIZE THE CAROUSEL HOMEPAGE
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+}/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+	color:black!important;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 25rem;
+  background-color: white;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 25rem;
+}
+/* CUSTOMIZE THE CAROUSEL PRODUCTION
+-------------------------------------------------- */
+.carouselGallery-item>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 200px;}
+.carouselGallery-item {
+  height: 200px;
+  background-color: #777;
+}
+/*************************************
+      CALENDAR BOX DESIGN
+*****************************************/
+.day-group {margin-bottom: 1rem}
+.day-title {
+	width:100%;
+	color: white;
+	background-color: rgba(206, 94, 116,1);
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80%;
+}
+/*************************************
+      show review container homepage
+*****************************************/
+.author-reviews {}
+/*rating system*/
+.rating-show-fixed {display:inline-block;}
+/*************************************
+      show review container homepage
+*****************************************/
+.show-review {
+	border: solid 1px black;
+	border-radius: 2em;
+	background-color: rgba(136,136,136,0.3)
+}
+/*************************************
+     THEATRE PAGE DESIGN
+*****************************************/
+/*------------PRODUCTION LIST----------*/
+/*setting colors for links*/
+.production-link {color:black;}
+.production-link:hover {
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #EF95A7  inset;
+	color:white!important;
+    -webkit-box-shadow: -500px 0 0 #EF95A7 inset;
+	
+	/*  ADD HERE FOR BUTTON MOVING/BOUNCING TO LET THE USER REALIZE THAT HE IS OVERING OVER IT.  */
+}
+.production-link a {text-decoration: none;}
+/*************************************
+     CAROUSEL SPECIFIC PRODUCTION PAGE
+*****************************************/
+.carousel-review {height:15em;}
+.carousel-review-caption {color:black;}
+/* presentation to be used on production page and on show page too.  */
+.show-presentation {background-color: RGBA(103, 2, 22, 1.00);}
+.breadcrumb {background: transparent!important;}
+.breadcrumb-item {color:white!important;}
+.title-musical-production {color:white!important;}
+.sub-title-musical-production {color:white!important;}
+.col-black{color:black}
+.btn-book-tickets {background-color: RGBA(0, 178, 27, 1.00);}
+.img-new-post-slider {
+	align-self: center;
+	max-width: 235px;
+	max-height: 200px
+}
+
+/*************************************
+     SHOW PAGE DESIGN
+*****************************************/
+.label-show-detail {
+	color:RGBA(239, 149, 167, 1.00);
+}
+.stat-gen-show{
+	color:white!important;
+	font-size: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+.showpage-production-date{
+	font-family: 'Karla', sans-serif;
+	font-size:90%;
+	color:black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.show-production-title {
+	font-samily: 'Karla;', sans-serif; /* font-family: 'Karla', sans-serif; --- 	font-family: 'Montserrat', sans-serif;*/
+	font-size: 120%;
+	text-transform: capitalize;
+	font-weight:600;
+}
